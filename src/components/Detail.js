@@ -25,10 +25,10 @@ const Detail = ({exerciseDetail}) => {
   ]
 
   return (
-    <Stack gap='60px' sx={{flexDirection: {lg: 'row'}, p:'20px', alignItems: 'center'}}>
+    <Stack gap='60px' sx={{flexDirection: {md: 'row'}, p:'20px', alignItems: 'center'}}>
       <img src={gifUrl} alt={name} loading='lazy' className='detail-image' />
       <Stack sx={{ gap: {lg: '35px', xs: '20px'}}}>
-        <Typography variant='h3' textTransform='capitalize'>
+        <Typography sx={{ typography: {lg: 'h3', xs:'h4'} }} textTransform='capitalize'>
           {name}
         </Typography>
         <Typography variant='h6'>
